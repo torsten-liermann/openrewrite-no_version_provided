@@ -4,9 +4,14 @@
                              https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>io.github.rewrite.test</groupId>
+  <parent>
+    <groupId>io.github.rewrite.test</groupId>
+    <artifactId>props</groupId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../props/pom.xml</relativePath>
+  </parent>
+
   <artifactId>parent</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <dependencyManagement>
@@ -14,7 +19,7 @@
       <dependency>
         <groupId>io.flux-capacitor</groupId>
         <artifactId>common</artifactId>
-        <version>0.1142.0</version>
+	<version>${props.version}</version>
         <type>test-jar</type>
       </dependency>
     </dependencies>

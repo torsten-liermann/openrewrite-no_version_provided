@@ -5,13 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.github.rewrite.test</groupId>
-  <artifactId>openrewrite-test</artifactId>
+  <artifactId>props</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <modules>
-    <module>props</module>
-    <module>parent</module>
-    <module>consumer</module>
-  </modules>
+  <properties>
+	  <flux.version>0.1142.0</flux.version>
+  </properties>
+
 </project>
