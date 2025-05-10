@@ -6,7 +6,7 @@
 
   <parent>
     <groupId>io.github.rewrite.test</groupId>
-    <artifactId>props</groupId>
+    <artifactId>props</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <relativePath>../props/pom.xml</relativePath>
   </parent>
@@ -19,7 +19,7 @@
       <dependency>
         <groupId>io.flux-capacitor</groupId>
         <artifactId>common</artifactId>
-	<version>${props.version}</version>
+	<version>${flux.version}</version>
         <type>test-jar</type>
       </dependency>
     </dependencies>
