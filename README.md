@@ -87,4 +87,4 @@ This structure has caused Rewrite failures in enterprise scenarios.
 
 The following issue has been submitted to suggest improvements to OpenRewrite's error reporting:
 
-👉 *\[Link to GitHub Issue – to be added]*
+👉 [OpenRewrite](https://github.com/openrewrite/rewrite-maven-plugin/issues/983)
