@@ -13,5 +13,6 @@
     <module>props</module>
     <module>parent</module>
     <module>consumer</module>
+    <module>dmi-01</module>
   </modules>
 </project>
