@@ -60,9 +60,8 @@ This placeholder was embedded in the serialized XML content of a `pom.xml`, maki
 The Rewrite plugin is executed from the CLI as follows:
 
 ```bash
-\apache-maven-3.9.9\bin\mvn \
+mvnw \
   org.openrewrite.maven:rewrite-maven-plugin:6.8.0:run \
-  -Drewrite.configLocation=https://raw.githubusercontent.com/torsten-liermann/openrewrite-pom-manipulation/refs/heads/main/rewrite.yml \
   -Drewrite.activeRecipes=EAP80
 ```
 

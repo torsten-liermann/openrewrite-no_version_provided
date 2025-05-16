@@ -1,0 +1,12 @@
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: EAP80
+displayName: EAP 8.0 Test Recipe
+description: |
+  This is a dummy, no-operation OpenRewrite recipe created for testing purposes.
+  It does not perform any changes, but can be used for validation and testing setups.
+tags:
+  - test
+  - dummy
+  - no-operation
+recipeList: []
