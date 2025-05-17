@@ -2,17 +2,17 @@
 
 This project demonstrates a Maven multi-module setup involving `dependencyManagement` with `test-jar` dependencies, created to investigate and document a diagnostic limitation in the OpenRewrite Maven Plugin (version 6.8.0).
 
-Although the original issue could not be fully reproduced with this demo, it captures the structural patterns and use cases relevant to the encountered behavior. The repository serves as a minimal reference for discussion and improvement of error diagnostics.
+Although the original issue (OpenRewrite Maven Plugin Issue #983) could not be fully reproduced with this demo, it captures the structural patterns and use cases relevant to the encountered behavior. For completeness, the project now includes an additional module (dmi-01) acting as a central <dependencyManagement> BOM for the test-jar dependencies, but this extension still does not trigger the error. The repository serves as a minimal reference for discussion and improvement of error diagnostics.
 
 ## 🧱 Project Structure
 
 ```
-
 openrewrite-test/
 ├── pom.xml               # Aggregator POM (declares all modules)
 ├── props/                # Provides <properties> like flux.version
-├── parent/               # Contains <dependencyManagement> (test-jar)
-└── consumer/             # Uses test-jar dependency
+├── parent/               # Includes BOM module dmi-01 (test-jar dependency management)
+├── consumer/             # Uses test-jar dependency
+└── dmi-01/               # Provides central <dependencyManagement> for test-jar dependencies
 
 ```
 
