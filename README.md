@@ -10,10 +10,11 @@ Although the original issue (OpenRewrite Maven Plugin Issue #983) could not be 
 openrewrite-test/
 ├── pom.xml               # Aggregator POM (declares all modules)
 ├── props/                # Provides <properties> like flux.version
-├── parent/               # Includes BOM module dmi-01 (test-jar dependency management)
-├── consumer/             # Uses test-jar dependency
-└── dmi-01/               # Provides central <dependencyManagement> for test-jar dependencies
-
+├── dmi-01/               # BOM module (dependencyManagement for 'common' artifacts)
+├── java/                 # Top-level parent POM (imports dmi-01 BOM)
+├── parent/               # Intermediate parent POM (inherits from "java")
+├── common/               # Common test library (inherits from "parent")
+└── consumer/             # Leaf module (inherits from "common")
 ```
 
 ## 💡 Problem Background
