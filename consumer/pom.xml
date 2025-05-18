@@ -17,6 +17,41 @@
     <dependency>
       <groupId>io.flux-capacitor</groupId>
       <artifactId>common</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.flux-capacitor</groupId>
+      <artifactId>common</artifactId>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>io.flux-capacitor</groupId>
+      <artifactId>common</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.flux-capacitor</groupId>
+      <artifactId>common</artifactId>
+      <type>jar</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.flux-capacitor</groupId>
+      <artifactId>common</artifactId>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>io.flux-capacitor</groupId>
+      <artifactId>common</artifactId>
+      <classifier>sources</classifier>
+    </dependency>
+    <dependency>
+      <groupId>io.flux-capacitor</groupId>
+      <artifactId>common</artifactId>
+      <classifier>javadoc</classifier>
+    </dependency>
+    <dependency>
+      <groupId>io.flux-capacitor</groupId>
+      <artifactId>common</artifactId>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>

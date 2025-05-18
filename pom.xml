@@ -11,9 +11,9 @@
 
   <modules>
     <module>props</module>
+    <module>parent</module>
     <module>dmi-01</module>
     <module>java</module>
-    <module>parent</module>
     <module>common</module>
     <module>consumer</module>
   </modules>

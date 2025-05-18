@@ -10,7 +10,7 @@
   <packaging>pom</packaging>
 
   <properties>
-	  <flux.version>0.1142.0</flux.version>
+	  <flux.version>0.1148.0</flux.version>
   </properties>
 
 </project>
